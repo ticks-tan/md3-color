@@ -77,16 +77,16 @@ async fn output_color(theme: &Theme, output: &String, is_dark: bool) {
         &theme.schemes.light
     };
     let msg = format!(
-        "$background={}\n$onBackground={}\n\n\
-        $primary={}\n$secondary={}\n$tertiary={}\n$error={}\n\
-        $primaryContainer={}\n$secondaryContainer={}\n$tertiaryContainer={}\n$errorContainer={}\n\
-        $surfaceDim={}\n$surface={}\n$surfaceBright={}\n$surfaceContainer={}\n\
-        $outline={}\n$shadow={}\n\
-        $inversePrimary={}\n$inverseSurface={}\n\n\
-        $onPrimary={}\n$onSecondary={}\n$onTertiary={}\n$onError={}\n\
-        $onPrimaryContainer={}\n$onSecondaryContainer={}\n\
-        $onTertiaryContainer={}\n$onErrorContainer={}\n\
-        $onSurface={}\n$scrim={}\n",
+        "background={}\nonBackground={}\n\n\
+        primary={}\nsecondary={}\ntertiary={}\nerror={}\n\
+        primaryContainer={}\nsecondaryContainer={}\ntertiaryContainer={}\nerrorContainer={}\n\
+        surfaceDim={}\nsurface={}\nsurfaceBright={}\nsurfaceContainer={}\n\
+        outline={}\nshadow={}\n\
+        inversePrimary={}\ninverseSurface={}\n\n\
+        onPrimary={}\nonSecondary={}\nonTertiary={}\nonError={}\n\
+        onPrimaryContainer={}\nonSecondaryContainer={}\n\
+        onTertiaryContainer={}\nonErrorContainer={}\n\
+        onSurface={}\nscrim={}\n",
         scheme.background.as_hex(), scheme.on_background.as_hex(),
         scheme.primary.as_hex(), scheme.secondary.as_hex(),
         scheme.tertiary.as_hex(), scheme.error.as_hex(),
